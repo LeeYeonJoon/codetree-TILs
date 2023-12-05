@@ -26,6 +26,7 @@ int fun(int *x,int *y,int n,int m)
                 if(j==m) break;
             }
     }
+    return flag;
 
 }
 int main() {
