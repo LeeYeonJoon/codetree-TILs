@@ -11,17 +11,18 @@ void input(int *p,int k)
 }
 int fun(int *x,int *y,int n,int m)
 {
-    int i,j,start;
+    int i,j;
     int flag;
     for(i=0;i<n;i++)
     {
         if(x[i]==y[0])
-            { flag=1;
-                for(j=1; j<m; j++)
-                {
-                    if(i+j<m) {flag=0;break;}
-                    if(x[i+j]!=y[j]) {flag=0; break;}
-                }
+            { 
+                flag=1;
+            for(j=1; j<m; j++)
+            {
+                if(i+j<m) {flag=0;break;}
+                if(x[i+j]!=y[j]) {flag=0; break;}
+            }
             
                 if(j==m) break;
             }
